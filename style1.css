@@ -167,27 +167,26 @@ section {
 
 /*Responsive Css */
 
-/* @media (max-width: 1002px) {
+@media (max-width: 1002px) {
   header {
     padding: 26px 3%;
     transition: 0.3s;
   }
-} */
-
+}
   @media (max-width: 768px) {
     .navmenu {
       position: absolute;
       top: 100%;
-      right: -20%;
-      width: 250px;
-      height: 38vh;
+      right: -10%;
+      width: 200px;
+      height: 15vh;
       background: #83543d;
       display: flex;
-      align-items: center;
+      align-items: right;
       flex-direction: column;
       justify-content: flex-start;
-      padding: 20px;
-      border-radius: 4px;
+      padding: 10px;
+      border-radius: 2px;
       transition: all 0.42s;
     }
   }
@@ -246,4 +245,8 @@ section {
   .navmenu.open {
     top: 2%;
   }
+}
+.contact-btn {
+  font-size: 10px;
+  transition: 0.4s;
 }
