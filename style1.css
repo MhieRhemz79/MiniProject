@@ -211,7 +211,7 @@ section {
    transition: .3s;
 }
   #menu-icon {
-    color: #111;
+    color: #fff;
     transition: .3s;
   }
   @media(max-width:785){
