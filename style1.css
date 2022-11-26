@@ -48,6 +48,10 @@ img {
   transition: all 0.42s ease;
   color: #fff;
 }
+.nav-icon i:hover {
+  transform: translateY(-5px);
+  color: #000;
+}
 .navmenu a:hover {
   border-bottom: 2px solid rgb(255, 91, 15);
   color: rgb(255, 91, 15);
@@ -59,6 +63,11 @@ img {
   cursor: pointer;
   display: none;
 }
+
+section {
+  padding: 0 5%;
+}
+
 .contact-btn {
   display: inline-block;
   font-size: 16px;
@@ -95,7 +104,7 @@ body {
   margin: 55px;
 }
 
-.home-text h4 {
+.home-text {
   color: #111;
   font-size: 20px;
   text-transform: uppercase;
@@ -109,7 +118,7 @@ body {
   text-transform: capitalize;
   font-weight: 600;
   letter-spacing: -2px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 .home-text p {
   color: #111;
@@ -156,7 +165,7 @@ body {
 
 @media (max-width: 1002px) {
   header {
-    padding: 20px 3%;
+    padding: 26px 3%;
     transition: 0.3s;
   }
 }
@@ -178,12 +187,8 @@ body {
   }
 }
 @media (max-width: 860px) {
-  .home-text h4 {
-    font-size: 18px;
-    transition: 0.3s;
-  }
   .home-text h1 {
-    font-size: 40px;
+    font-size: 50px;
     transition: 0.3s;
   }
   .home-text p {
@@ -191,7 +196,7 @@ body {
     transition: 0.3s;
   }
   .btn {
-    padding: 10px 16px;
+    padding: 10px 30px;
     transition: 0.3s;
   }
 }
@@ -220,14 +225,4 @@ body {
   .navmenu.open {
     top: 100%;
   }
-}
-.nav-icon i {
-  margin-right: 12px;
-  font-size: 28px;
-  font-weight: 500;
-  transition: all 0.42s ease;
-}
-.nav-icon i:hover {
-  transform: translateY(-5px);
-  color: #000;
 }
