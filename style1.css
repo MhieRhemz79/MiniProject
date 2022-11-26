@@ -173,23 +173,24 @@ section {
     transition: 0.3s;
   }
 } */
-/* @media (max-width: 785) {
-  .navmenu {
-    position: absolute;
-    top: 100%;
-    right: -20%;
-    width: 250px;
-    height: 38vh;
-    background: #83543d;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 20px;
-    border-radius: 4px;
-    transition: all 0.42s;
-  } */
-}
+
+  @media (max-width: 768px) {
+    .navmenu {
+      position: absolute;
+      top: 100%;
+      right: -20%;
+      width: 250px;
+      height: 38vh;
+      background: #83543d;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 20px;
+      border-radius: 4px;
+      transition: all 0.42s;
+    }
+  }
 @media (max-width: 830px) {
   .home-text h1 {
     font-size: 50px;
