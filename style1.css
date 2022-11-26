@@ -30,7 +30,7 @@ img {
   font-size: 17px;
   font-weight: 600;
   text-decoration: none;
-  color: #222;
+  color: #fff;
   text-transform: uppercase;
   padding: 10px 20px;
   border-bottom: 2px solid transparent;
@@ -50,7 +50,7 @@ img {
 }
 .nav-icon i:hover {
   transform: translateY(-5px);
-  color: #000;
+  color: #fff;
 }
 .navmenu a:hover {
   border-bottom: 2px solid rgb(255, 91, 15);
@@ -61,11 +61,10 @@ img {
   color: #fff;
   z-index: 10001;
   cursor: pointer;
-  display: none;
 }
 
 section {
-  padding: 0 5%;
+  padding: 0 12%;
 }
 
 .contact-btn {
@@ -74,26 +73,28 @@ section {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 500;
-  border: 2px solid #000;
+  border: 2px solid #fff;
   padding: 10px 30px;
   border-radius: 50px;
-  background-color: #000;
+  background-color: #111;
   color: #fff;
   transition: 0.4s;
 }
 .contact-btn:hover {
   background-color: transparent;
-  color: #000;
+  color: #111;
 }
-body {
+/* body {
   background-image: url(images2.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-}
+} */
 .home {
   width: 100%;
   height: 100vh;
+  background-image: url(images2.jpg);
   background-position: center;
+  background-size: cover;
   position: relative;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -113,35 +114,38 @@ body {
   margin-bottom: 15px;
 }
 .home-text h1 {
-  font-size: 50px;
+  font-size: 60px;
   color: rgb(255, 91, 15);
+  line-height: 1;
   text-transform: capitalize;
-  font-weight: 600;
+  /* font-weight: 600;
   letter-spacing: -2px;
-  margin-bottom: 10px;
+  margin-bottom: 10px; */
+  margin: 20px 0;
 }
 .home-text p {
-  color: #111;
+  color: white;
   font-weight: 400;
   font-size: 18px;
   text-transform: capitalize;
-  max-width: 520px;
-  line-height: 28px;
+  max-width: 400px;
+  /* line-height: 28px; */
   margin-bottom: 30px;
 }
-.btn {
-  color: #000;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 600;
-  border: 2px solid #000;
-  border-radius: 50px;
-  padding: 10px 20px;
-  transition: 0.4s;
-}
-.btn:hover {
+.home-btn {
+  display: inline-block;
   color: #fff;
-  background-color: #000;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: 2px solid #111;
+  border-radius: 50px;
+  padding: 10px 40px;
+  transition: all 0.42s;
+}
+.home-btn:hover {
+  color: #fff;
+  background-color: #111;
 }
 .icon {
   position: absolute;
@@ -154,7 +158,7 @@ body {
   display: block;
   margin: 28px 0;
   font-size: 25px;
-  color: black;
+  color: white;
   transition: 0.4s;
 }
 .icon i:hover {
@@ -163,13 +167,13 @@ body {
 
 /*Responsive Css */
 
-@media (max-width: 1002px) {
+/* @media (max-width: 1002px) {
   header {
     padding: 26px 3%;
     transition: 0.3s;
   }
-}
-@media (max-width: 785) {
+} */
+/* @media (max-width: 785) {
   .navmenu {
     position: absolute;
     top: 100%;
@@ -184,9 +188,9 @@ body {
     padding: 20px;
     border-radius: 4px;
     transition: all 0.42s;
-  }
+  } */
 }
-@media (max-width: 860px) {
+@media (max-width: 830px) {
   .home-text h1 {
     font-size: 50px;
     transition: 0.3s;
@@ -201,28 +205,44 @@ body {
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1345px) {
+  .nav-icon i{
+   color: #111
+   transition: .3s;
+}
   #menu-icon {
-    display: block;
+    color: #111;
+    transition: .3s;
   }
+  @media(max-width:785){
   .navmenu {
     position: absolute;
-    top: -600px;
-    left: 0;
-    right: 0;
+    top: 100%;
+    right: -200%;
+    width: 250px;
+    height: 35vh;
+    background: #83543d;
+    align-items: center;
     flex-direction: column;
-    background: #404040;
-    text-align: left;
-    transition: all 0.4s;
+    justify-content: flex-start;
+    padding: 20px;
+    border-radius: 4px;
+    transition: all .42s;
   }
   .navmenu a {
     display: block;
     padding: 16px;
-    margin: 8px;
+    margin: -3px 0;
     color: #fff;
     border-left: 2px solid #fff;
+    transition: all 0.42s;
   }
+  
+  .navmenu a:hover{
+    transform: translateY(5px)
+  }
+
   .navmenu.open {
-    top: 100%;
+    top: 2%;
   }
 }
