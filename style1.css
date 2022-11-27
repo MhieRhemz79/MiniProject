@@ -219,7 +219,7 @@ section {
     top: -600pxs;
     left: 0;
     right: 0;
-    background: #83543d;
+    /* background: #83543d; */
     flex-direction:column;
     text-align: left;
     transition: all .40s;
@@ -256,6 +256,7 @@ section {
   font-size: 10px;
   transition: 0.4s;
 }
+
 
 
 
