@@ -82,3 +82,33 @@ img {
 section {
   padding: 0 12%;
 }
+.Catalog {
+  width: 100%;
+  height: 100vh;
+  background-color: lightsalmon;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+}
+.catalog-text {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin: 55px;
+}
+.catalog-text h1 {
+  font-size: 50px;
+  color: rgb(255, 91, 15);
+  line-height: 1; 
+  text-transform: capitalize;
+  font-weight: 600; 
+  letter-spacing: -2px;
+  margin-bottom: 12px; 
+  margin: 20px 0;
+}
