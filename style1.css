@@ -57,7 +57,7 @@ img {
   border-bottom: 2px solid rgb(255, 91, 15);
   color: rgb(255, 91, 15);
 }
-#menu-icon {
+.menu-icon {
   font-size: 30px;
   color: #fff;
   z-index: 10001;
@@ -206,7 +206,7 @@ section {
   }
 }
 @media(max-width:950px) {
-  #menu-icon {
+  .menu-icon {
     font-size: 35px;
     color: #fff;
     z-index: 10001;
@@ -242,7 +242,7 @@ section {
    color: #111
    transition: .3s;
 }
-  #menu-icon {
+  .menu-icon {
     color: #fff;
     transition: .3s;
   }
