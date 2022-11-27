@@ -245,9 +245,9 @@ section {
    color: #111
    transition: .3s;
 }
-  #menu-icon {
+  /* #menu-icon {
     color: #fff;
-    transition: .3s;
+    transition: .3s; */
   }
   .navbar a:hover{
     transform: translateY(5px)
@@ -256,5 +256,6 @@ section {
   font-size: 10px;
   transition: 0.4s;
 }
+
 
 
