@@ -15,27 +15,28 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 8%;
+  padding: 16px 8%;
 }
-
 img {
   height: 110px;
   width: 110px;
   border-radius: 110px;
 }
-.navmenu {
+.navbar {
   display: flex;
 }
-.navmenu a {
-  font-size: 17px;
+.navbar a {
+  font-size: 14px;
   font-weight: 600;
-  text-decoration: none;
+  /* text-decoration: none; */
   color: #fff;
   text-transform: uppercase;
   padding: 10px 20px;
   border-bottom: 2px solid transparent;
   margin: 0 20px;
-  transition: 0.42s;
+  transition: 0.40s;
+}
+/* s */
 }
 .nav-icon {
   display: flex;
@@ -52,21 +53,17 @@ img {
   transform: translateY(-5px);
   color: #fff;
 }
-.navmenu a:hover {
+.navbar a:hover {
   border-bottom: 2px solid rgb(255, 91, 15);
   color: rgb(255, 91, 15);
 }
 #menu-icon {
-  font-size: 35px;
+  font-size: 30px;
   color: #fff;
   z-index: 10001;
   cursor: pointer;
+  display: none;
 }
-
-section {
-  padding: 0 12%;
-}
-
 .contact-btn {
   display: inline-block;
   font-size: 16px;
@@ -78,11 +75,14 @@ section {
   border-radius: 50px;
   background-color: #111;
   color: #fff;
-  transition: 0.4s;
+  transition: 0.40s;
 }
 .contact-btn:hover {
   background-color: transparent;
   color: #111;
+}
+section {
+  padding: 0 12%;
 }
 /* body {
   background-image: url(images2.jpg);
@@ -100,11 +100,9 @@ section {
   grid-template-columns: repeat(1, 1fr);
   align-items: center;
 }
-
-.home-text {
+/* .home-text {
   margin: 55px;
-}
-
+} */
 .home-text {
   color: #111;
   font-size: 20px;
@@ -112,15 +110,16 @@ section {
   letter-spacing: 1.5px;
   font-weight: 500;
   margin-bottom: 15px;
+  margin: 55px;
 }
 .home-text h1 {
-  font-size: 60px;
+  font-size: 50px;
   color: rgb(255, 91, 15);
-  line-height: 1;
+  line-height: 1; 
   text-transform: capitalize;
-  /* font-weight: 600;
+  font-weight: 600; 
   letter-spacing: -2px;
-  margin-bottom: 10px; */
+  margin-bottom: 12px; 
   margin: 20px 0;
 }
 .home-text p {
@@ -128,23 +127,25 @@ section {
   font-weight: 400;
   font-size: 18px;
   text-transform: capitalize;
-  max-width: 400px;
-  /* line-height: 28px; */
+  max-width: 500px;
+  line-height: 28px; 
   margin-bottom: 30px;
 }
 .home-btn {
   display: inline-block;
-  color: #fff;
   font-size: 17px;
   text-transform: uppercase;
-  font-weight: 500;
-  border: 2px solid #111;
-  border-radius: 50px;
+  margin-right: 15px;
+  border: 2px solid #fff;
   padding: 10px 40px;
-  transition: all 0.42s;
+  border-radius: 50px;
+  background-color: rgb(255, 91, 15);
+  color: #fff;
+  font-weight: 500;
+  transition: all .42s;
 }
 .home-btn:hover {
-  color: #fff;
+  color: rgb(255, 91, 15);
   background-color: #111;
 }
 .icon {
@@ -174,7 +175,7 @@ section {
   }
 }
   @media (max-width: 768px) {
-    .navmenu {
+    .navbar {
       position: absolute;
       top: 100%;
       right: -10%;
@@ -190,9 +191,9 @@ section {
       transition: all 0.42s;
     }
   }
-@media (max-width: 830px) {
+@media (max-width: 860px) {
   .home-text h1 {
-    font-size: 50px;
+    font-size: 40px;
     transition: 0.3s;
   }
   .home-text p {
@@ -204,7 +205,38 @@ section {
     transition: 0.3s;
   }
 }
-
+@media(max-width:950px) {
+  #menu-icon {
+    font-size: 35px;
+    color: #fff;
+    z-index: 10001;
+    cursor: pointer;
+  }  
+  .navbar {
+    position: absolute;
+    top: -600px;
+    left: 0;
+    right: 0;
+    background: #83543d;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: flex-start;
+    padding: 20px;
+    border-radius: 4px; */
+    transition: all .40s;
+  }
+  .navbar a {
+    display: block;
+    padding: 16px;
+    margin: 8px;
+    color: #fff;
+    border-left: 2px solid #fff;
+    transition: all 0.40s;
+  }
+  .navbar.open {
+    top: 100%;
+  }
+}
 @media (max-width: 1345px) {
   .nav-icon i{
    color: #111
@@ -214,38 +246,9 @@ section {
     color: #fff;
     transition: .3s;
   }
-  @media(max-width:785){
-  .navmenu {
-    position: absolute;
-    top: 100%;
-    right: -200%;
-    width: 250px;
-    height: 35vh;
-    background: #83543d;
-    align-items: center;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 20px;
-    border-radius: 4px;
-    transition: all .42s;
-  }
-  .navmenu a {
-    display: block;
-    padding: 16px;
-    margin: -3px 0;
-    color: #fff;
-    border-left: 2px solid #fff;
-    transition: all 0.42s;
-  }
-  
-  .navmenu a:hover{
+  .navbar a:hover{
     transform: translateY(5px)
   }
-
-  .navmenu.open {
-    top: 2%;
-  }
-}
 .contact-btn {
   font-size: 10px;
   transition: 0.4s;
