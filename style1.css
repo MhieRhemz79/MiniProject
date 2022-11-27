@@ -57,7 +57,7 @@ img {
   border-bottom: 2px solid rgb(255, 91, 15);
   color: rgb(255, 91, 15);
 }
-.menu-icon {
+#menu-icon {
   font-size: 30px;
   color: #fff;
   z-index: 10001;
@@ -73,13 +73,13 @@ img {
   border: 2px solid #fff;
   padding: 10px 30px;
   border-radius: 50px;
-  background-color: #111;
+  background-color: rgb(255, 91, 15);
   color: #fff;
   transition: 0.40s;
 }
 .contact-btn:hover {
-  background-color: transparent;
-  color: #111;
+  background-color:#fff;
+  color: rgb(255, 91, 15);
 }
 section {
   padding: 0 12%;
@@ -146,7 +146,7 @@ section {
 }
 .home-btn:hover {
   color: rgb(255, 91, 15);
-  background-color: #111;
+  background-color: #fff;
 }
 .icon {
   position: absolute;
@@ -206,24 +206,27 @@ section {
   }
 }
 @media(max-width:950px) {
-  .menu-icon {
-    font-size: 35px;
+  #menu-icon {
+    display: block;
+  }
+    /* font-size: 35px;
     color: #fff;
     z-index: 10001;
-    cursor: pointer;
-  }  
+    cursor: pointer; */
+  
   .navbar {
     position: absolute;
-    top: -600px;
+    top: -600pxs;
     left: 0;
     right: 0;
     background: #83543d;
-    align-items: center;
-    flex-direction: column;
+    flex-direction:column;
+    text-align: left;
+    transition: all .40s;
     /* justify-content: flex-start;
     padding: 20px;
-    border-radius: 4px; */
-    transition: all .40s;
+    border-radius: 4px; 
+    transition: all .40s; */
   }
   .navbar a {
     display: block;
@@ -242,7 +245,7 @@ section {
    color: #111
    transition: .3s;
 }
-  .menu-icon {
+  #menu-icon {
     color: #fff;
     transition: .3s;
   }
@@ -253,3 +256,5 @@ section {
   font-size: 10px;
   transition: 0.4s;
 }
+
+
