@@ -181,7 +181,7 @@ section {
       right: -10%;
       width: 200px;
       height: 15vh;
-      background: #83543d;
+      /* s */
       display: flex;
       align-items: right;
       flex-direction: column;
@@ -256,6 +256,7 @@ section {
   font-size: 10px;
   transition: 0.4s;
 }
+
 
 
 
