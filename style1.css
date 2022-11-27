@@ -201,7 +201,7 @@ section {
     transition: 0.3s;
   }
   .btn {
-    padding: 10px 30px;
+    padding: 10px 16px;
     transition: 0.3s;
   }
 }
@@ -216,17 +216,17 @@ section {
   
   .navbar {
     position: absolute;
-    top: -600pxs;
+    top: -600px;
     left: 0;
     right: 0;
     /* background: #83543d; */
     flex-direction:column;
     text-align: left;
     transition: all .40s;
-    justify-content: flex-start;
+    /* justify-content: flex-start;
     padding: 20px;
     border-radius: 4px; 
-    transition: all .40s; 
+    transition: all .40s;  */
   }
   .navbar a {
     display: block;
@@ -234,20 +234,20 @@ section {
     margin: 8px;
     color: #fff;
     border-left: 2px solid #fff;
-    transition: all 0.40s;
+    /* transition: all 0.40s; */
   }
   .navbar.open {
     top: 100%;
   }
 }
-@media (max-width: 1345px) {
+/* @media (max-width: 1345px) {
   .nav-icon i{
    color: #111
    transition: .3s;
 }
-  #menu-icon {
+  /* #menu-icon {
     color: #fff;
-    transition: .3s; 
+    transition: .3s;  */
   }
   .navbar a:hover{
     transform: translateY(5px)
@@ -255,5 +255,4 @@ section {
 .contact-btn {
   font-size: 10px;
   transition: 0.4s;
-}
-
+} */
