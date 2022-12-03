@@ -29,7 +29,7 @@ img {
   font-size: 14px;
   font-weight: 600;
   /* text-decoration: none; */
-  color: #111;
+  color: #fff;
   text-transform: uppercase;
   padding: 10px 20px;
   border-bottom: 2px solid transparent;
@@ -45,19 +45,23 @@ img {
   font-size: 28px;
   font-weight: 500;
   transition: all 0.42s ease;
-  color: #111;
+  color: #fff;
 }
 .nav-icon i:hover {
   transform: translateY(-5px);
-  color: #111;
+  color: rgb(255, 91, 15);
 }
 .navbar a:hover {
   border-bottom: 2px solid rgb(255, 91, 15);
   color: rgb(255, 91, 15);
 }
+.navbar a:hover,
+.navbar a.active {
+  color: rgb(255, 91, 15);
+}
 #menu-icon {
   font-size: 30px;
-  color: #111;
+  color: #fff;
   z-index: 10001;
   cursor: pointer;
   display: none;
@@ -68,21 +72,21 @@ img {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 500;
-  border: 2px solid #111;
+  border: 2px solid #fff;
   padding: 10px 30px;
   border-radius: 50px;
   background-color: rgb(255, 91, 15);
-  color: #111;
+  color: #fff;
   transition: 0.40s;
 }
 .contact-btn:hover {
-  background-color:#111;
+  background-color:#fff;
   color: rgb(255, 91, 15);
 }
 section {
   padding: 0 12%;
 }
-.Catalog {
+.Catalogue {
   width: 100%;
   height: 100vh;
   background-color: lightsalmon;
@@ -93,7 +97,7 @@ section {
   grid-template-columns: repeat(1, 1fr);
   align-items: center;
 }
-.catalog-text {
+.catalogue-text {
   color: #fff;
   font-size: 20px;
   text-transform: uppercase;
@@ -102,7 +106,7 @@ section {
   margin-bottom: 15px;
   margin: 55px;
 }
-.catalog-text h1 {
+.catalogue-text h1 {
   font-size: 50px;
   color: rgb(255, 91, 15);
   line-height: 1; 
@@ -112,18 +116,30 @@ section {
   margin-bottom: 12px; 
   margin: 20px 0;
 }
-.container{
-  width: 50%;
-  height: 25vh;
-background: lightsalmon;
-display: flex;
-align-items: center;
-justify-content: center;
+h2 {
+  font-size: 50px;
+  line-height: 54px;
+  color: #222;
 }
-.swiper{
-  width: 50%;
-  height: fit-content;
+h4 {
+  font-size: 20px;
+  color: #222;
 }
-.swiper-slide img{
-  width: 50%;
+h6 {
+  font-size: 12px;
+  font-weight: 700;
+}
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+.section-p1 {
+  padding: 40px 80px;
+}
+.section-m1 {
+  margin: 40px 0;
+}
+body {
+  width: 100%;
 }

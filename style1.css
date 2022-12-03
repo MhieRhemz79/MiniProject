@@ -57,6 +57,12 @@ img {
   border-bottom: 2px solid rgb(255, 91, 15);
   color: rgb(255, 91, 15);
 }
+.navbar a:hover,
+.navbar a.active {
+  color: rgb(255, 91, 15);
+}
+
+
 #menu-icon {
   font-size: 30px;
   color: #fff;
@@ -81,8 +87,8 @@ img {
   background-color:#fff;
   color: rgb(255, 91, 15);
 }
-section {
-  padding: 0 12%;
+.section {
+  padding: 0 20%;
 }
 /* body {
   background-image: url(images2.jpg);
@@ -165,6 +171,40 @@ section {
 .icon i:hover {
   transform: translateY(-30%);
 }
+
+#Feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#Feature .fe-box {
+  width: 180px;
+  text-align: center;
+  padding: 10px 15px;
+  box-shadow: 20px 20px 34px #111;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  margin: 15px 0;
+}
+#Feature .fe-box {
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+#Feature .fe-box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+#Feature .fe-box h6 {
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  color: #fff;
+  background-color: rgb(255, 91, 15);
+
+}
+
+
 
 /*Responsive Css */
 
