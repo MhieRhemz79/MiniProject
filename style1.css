@@ -177,6 +177,7 @@ img {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-color: rgb(91, 117, 150);
 }
 #Feature .fe-box {
   width: 180px;
@@ -188,7 +189,7 @@ img {
   margin: 15px 0;
 }
 #Feature .fe-box {
-  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+  box-shadow: 10px 10px 54px rgb(91, 117, 150);
 }
 #Feature .fe-box img {
   width: 100%;
@@ -200,11 +201,131 @@ img {
   line-height: 1;
   border-radius: 4px;
   color: #fff;
-  background-color: rgb(255, 91, 15);
-
+  background-color: #cce7d0;
 }
-
-
+#product1 {
+  text-align: center;
+  color: rgb(255, 91, 15);
+  background-color: #e8f6ea;
+}
+#product1 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+#product1 .pro {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative;
+  background-color: rgb(91, 117, 150);
+}
+#product1 .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0,0,0, 0.06);
+}
+#product1 .pro .des {
+  text-align: start;
+  padding: 10px 0;
+}
+ #product1 .pro .des i {
+  font-size: 12px;
+  color: rgb(243, 181, 25); 
+}
+#product1 .star {
+  color: rgb(243, 181, 25);
+}
+#product1 .pro img {
+  /* width: 100%; */
+  border-radius: 20px;
+}
+#product1 .pro .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #e8f6ea;
+  font-weight: 500;
+  color: rgb(255, 91, 15);
+  border: 1px solid #cce7d0;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("111111.png");
+  width: 100%;
+  height: 78vh;
+  background-size: cover;
+  background-position: center;
+}
+#sm-banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#sm-banner .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("012.png");
+  min-width: 630px;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  /* text-decoration-color: #fff; */
+  color: rgb(255, 91, 15);
+  padding: 30px;
+}
+#sm-banner h4 {
+  color: rgb(255, 91, 15);
+  font-size: 20px;
+  font-weight: 300;
+}
+#sm-banner h2 {
+  color: rgb(255, 91, 15);
+  font-size: 28px;
+  font-weight: 800;
+}
+#sm-banner span {
+  color: rgb(255, 91, 15);
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+button.white{
+font-size: 13px;
+font-weight: 600;
+padding: 11px 18px;
+color: #fff; 
+background-color: rgb(255, 91, 15);
+/* border-radius: 4px; */
+cursor: pointer;
+border: 1px solid #fff;
+outline: none;
+transition: 0.2s;
+}
+#sm-banner .banner-box:hover button {
+  background-color: #fff;
+  color: rgb(255, 91, 15);
+  border: 1px solid rgb(255, 91, 15)
+}
+#sm-banner .banner-box2 {
+  background-image: url(013.png);
+}
 
 /*Responsive Css */
 
