@@ -326,7 +326,46 @@ transition: 0.2s;
 #sm-banner .banner-box2 {
   background-image: url(013.png);
 }
-
+#banner3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 80px;ss
+}
+#banner3 .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("0123.png");
+  min-width: 30%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  /* text-decoration-color: #fff; */
+  color: rgb(255, 91, 15);
+  padding: 30px;
+  margin-bottom: 10px;
+}
+#banner3 h2 {
+  font-weight: 900;
+  font-size: 22px;
+}
+#banner3 h3 {
+  font-weight: 800;
+  font-size: 15px;
+}
+#banner3 .banner-box2 {
+  background-image: url("014.png");
+  min-width: 40%;
+  height: 40vh;
+}
+#banner3 .banner-box3 {
+  background-image: url("015.png");
+  min-width: 30%;
+  height: 40vh;
+}
 
 /*Responsive Css */
 
