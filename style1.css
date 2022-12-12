@@ -194,7 +194,9 @@ img {
   /* margin-bottom: 10px; */
 }
 #Feature .fe-box {
-  box-shadow: 10px 10px 54px rgb(91, 117, 150);
+  box-shadow: 10px 10px 10px rgb(91, 117, 150);
+  margin-right: 20px;
+  margin-left: 20px;
 }
 #Feature .fe-box img {
   width: 10px
@@ -205,7 +207,7 @@ img {
 
 #Feature .fe-box h6 {
   display: inline-block;
-  padding: 9px 8px 6px 8px;
+  padding: 6px 6px 6px 6px;
   line-height: 1;
   border-radius: 4px;
   color: #fff;
