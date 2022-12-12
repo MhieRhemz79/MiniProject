@@ -180,21 +180,29 @@ img {
   background-color: rgb(91, 117, 150);
 }
 #Feature .fe-box {
-  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
   text-align: center;
-  padding: 10px 15px;
+  padding: 10px 10px 10px 10px;
   box-shadow: 20px 20px 34px #111;
   border: 1px solid #fff;
   border-radius: 4px;
   margin: 15px 0;
+  /* margin-bottom: 10px; */
 }
 #Feature .fe-box {
   box-shadow: 10px 10px 54px rgb(91, 117, 150);
 }
 #Feature .fe-box img {
-  width: 100%;
-  margin-bottom: 10px;
+  width: 10px
+  height: 10px;
+  /* margin-bottom: 10px; */
+  padding: 10px 10px;
 }
+
 #Feature .fe-box h6 {
   display: inline-block;
   padding: 9px 8px 6px 8px;
@@ -282,7 +290,7 @@ img {
   align-items: center;
   text-align: center;
   background-image: url("012.png");
-  min-width: 630px;
+  min-width: 500px;
   height: 40vh;
   background-size: cover;
   background-position: center;
@@ -339,7 +347,7 @@ transition: 0.2s;
   align-items: center;
   text-align: center;
   background-image: url("0123.png");
-  min-width: 30%;
+  min-width: 100px;
   height: 40vh;
   background-size: cover;
   background-position: center;
@@ -358,12 +366,12 @@ transition: 0.2s;
 }
 #banner3 .banner-box2 {
   background-image: url("014.png");
-  min-width: 40%;
+  min-width: 100px;
   height: 40vh;
 }
 #banner3 .banner-box3 {
   background-image: url("015.png");
-  min-width: 30%;
+  min-width: 100px;
   height: 40vh;
 }
 
@@ -457,4 +465,4 @@ transition: 0.2s;
 .contact-btn {
   font-size: 10px;
   transition: 0.4s;
-} */
+} 
