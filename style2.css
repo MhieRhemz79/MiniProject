@@ -37,29 +37,3 @@ header{
 }
 .navbar a:hover{
     border-bottom: 2px solid white;
-    color: darkslategrey;
-}
-#menu-icon{
-    font-size: 30px;
-    color: white;
-    z-index: 10001;
-    cursor: pointer;
-    display: none;
-}
-.contact-btn{
-    display: inline-block;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 500;
-    border: 2px solid #000;
-    padding: 10px 30px;
-    border-radius: 50px;
-    background-color: red;
-    color: #fff;
-    transition: .40s;
-}
-.contact-btn:hover{
-    background-color: white;
-    color: red;
-}
