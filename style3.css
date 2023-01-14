@@ -52,13 +52,15 @@ active {
 }
 #cart table td:nth-child(4),
 #cart table td:nth-child(5),
-#cart table td:nth-child(6) {
+#cart table td:nth-child(6),
+#cart table td:nth-child(7) {
   width: 150px;
   text-align: center;
 }
 
-#cart table td:nth-child(5) input {
-  width: 70px;
+#cart table td:nth-child(5) input,
+#cart table td:nth-child(6) input {
+  width: 100px;
   padding: 10px 5px 10px 5px;
 }
 
