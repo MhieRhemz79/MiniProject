@@ -298,7 +298,7 @@ product1 .pro .des h5 {
   justify-content: center;
   align-items: flex-start;
   background-image: url(1.2.jpg);
-  width: 640px;
+  width: 48%;
   height: 50vh;
   background-size: cover;
   background-position: center;
