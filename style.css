@@ -231,9 +231,9 @@ product1 .pro .des h5 {
   color: #1a1a1a;
   font-size: 14px;
 }
-#product .pro .des i {
+#product1 .pro .des i {
   font-size: 12px;
-  color: rgb(149, 243, 25);
+  color: rgb(243, 203, 25);
 }
 #product .pro .des h4 {
   padding-top: 7px;
@@ -470,15 +470,14 @@ footer .install img {
   margin: 10px 0 15px 0;
 }
 
-/*
 footer .follow i:hover,
 footer a:hover {
-  color: #088178;
+  color: red;
 }
 footer .copyright {
   width: 100%;
   text-align: center;
-} */
+}
 
 /* Responsive Css */
 
