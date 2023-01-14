@@ -1,130 +1,130 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    list-style: none;
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
-header{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 8%;
+header {
+  position: relative;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 8%;
 }
-.logo img{
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
+.logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
 }
-.navbar{
-    display: flex;
+.navbar {
+  display: flex;
 }
-.navbar a{
-    font-size: 14px;
-    font-weight: 600;
-    color: red;
-    text-transform: uppercase;
-    padding: 5px 5px;
-    border-bottom: 2px solid rgb(216, 12, 12);
-    margin: 0 20px;
-    transition: .40s;
+.navbar a {
+  font-size: 14px;
+  font-weight: 600;
+  color: red;
+  text-transform: uppercase;
+  padding: 5px 5px;
+  border-bottom: 2px solid rgb(216, 12, 12);
+  margin: 0 20px;
+  transition: 0.4s;
 }
-.navbar a:hover{
-    border-bottom: 2px solid white;
-    color: darkslategrey;
+.navbar a:hover {
+  border-bottom: 2px solid white;
+  color: darkslategrey;
 }
-#menu-icon{
-    font-size: 30px;
-    color: white;
-    z-index: 10001;
-    cursor: pointer;
-    display: none;
+#menu-icon {
+  font-size: 30px;
+  color: white;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
 }
-.contact-btn{
-    display: inline-block;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 500;
-    border: 2px solid #000;
-    padding: 10px 30px;
-    border-radius: 50px;
-    background-color: red;
-    color: #fff;
-    transition: .40s;
+.contact-btn {
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  border: 2px solid #000;
+  padding: 10px 30px;
+  border-radius: 50px;
+  background-color: red;
+  color: #fff;
+  transition: 0.4s;
 }
-.contact-btn:hover{
-    background-color: white;
-    color: red;
+.contact-btn:hover {
+  background-color: white;
+  color: red;
 }
-#product1{
-    text-align: center;
-    color: red;
+#product1 {
+  text-align: center;
+  color: red;
 }
-#product1 .pro-container{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    flex-wrap: wrap;
+#product1 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
 }
-#product1 .pro{
-    width: 23%;
-    min-width: 250px;
-    padding: 10px 12px;
-    border: 1px solid #cce7d0;
-    border-radius: 25px;
-    cursor: pointer;
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-    margin: 15px 0;
-    transition: 0.2s ease;
-    position: relative;
+#product1 .pro {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative;
 }
-#product1 .pro:hover{
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.036);
+#product1 .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.036);
 }
-#product1 .pro img{
-    width: 100%;
-    border-radius: 20px;
+#product1 .pro img {
+  width: 100%;
+  border-radius: 20px;
 }
-#product .pro .des{
-    text-align: start;
-    padding: 10px;
+#product .pro .des {
+  text-align: start;
+  padding: 10px;
 }
-#product1 .pro .des span{
-    color: #606063;
-    font-size: 12px;
+#product1 .pro .des span {
+  color: #606063;
+  font-size: 12px;
 }
-product1 .pro .des h5{
-    padding-top: 7px;
-    color: #1a1a1a;
-    font-size: 14px;
+product1 .pro .des h5 {
+  padding-top: 7px;
+  color: #1a1a1a;
+  font-size: 14px;
 }
-#product .pro .des i{
-    font-size: 12px;
-    color: rgb(149, 243, 25);
+#product .pro .des i {
+  font-size: 12px;
+  color: rgb(149, 243, 25);
 }
-#product .pro .des h4{
-    padding-top: 7px;
-    font-size: 15px;
-    font-weight: 700;
-    color: #088178;
+#product .pro .des h4 {
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #088178;
 }
-#product1 .pro .bag{
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 50px;
-    background-color: #e8f6ea;
-    font-weight: 500;
-    color: #088178;
-    border: 1px solid #cce7d0;
-    position: absolute;
-    bottom: 20px;
-    right: 10px;
+#product1 .pro .bag {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #e8f6ea;
+  font-weight: 500;
+  color: #088178;
+  border: 1px solid #cce7d0;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
 }
