@@ -1,110 +1,135 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    list-style: none;
-    text-decoration: none;
+header {
+  background-color: black;
+  opacity: 90%;
 }
-header{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 8%;
-}
-.logo img{
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-}
-.navbar{
-    display: flex;
-}
-.navbar a{
-    font-size: 14px;
-    font-weight: 600;
-    color: red;
-    text-transform: uppercase;
-    padding: 5px 5px;
-    border-bottom: 2px solid rgb(216, 12, 12);
-    margin: 0 20px;
-    transition: .40s;
-}
-.navbar a:hover{
-    border-bottom: 2px solid white;
-}
-#banner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: blue;
-    width: 100%;
-    height: 50vh;
-    background-position: center;
-    background-size: cover;
+.navbar a {
+  color: white;
+  border-bottom: 3px solid red;
 }
 
-
-
-
-
-
-/* Responsive Css */
-
-@media(max-width:1002){
-    header{
-        padding: 26px 3%;
-        transition: .3s;
-    }
-}
-@media(max-width:860px){
-    .main-text h4{
-        font-size: 18px;
-        transition: .3s;
-    }
-    .main-text h1{
-        font-size: 40px;
-        transition: .3s;
-    }
-    .main-text p{
-        font-size: 16px;
-        transition: .3s;
-    }
-    .btn{
-        padding: 10px 16px;
-        transition: .3s;
-    }
-}
-@media(max-width:950px){
-    #menu-icon{
-        display: block;
-    }
-    .navbar{
-        position: absolute;
-        top: -600px;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        background: rgb(20, 18, 18);
-        text-align: left;
-        transition: all .40s;
-    }
-    .navbar a{
-        display: block;
-        padding: 16px;
-        margin: 8px;
-        color: #fff;
-        border-left: 2px solid #fff;
-    }
-    .navbar.open{
-        top: 100%;
-    }
+.navbar a:hover,
+active {
+  color: red;
+  border-bottom: 3px solid rgb(150, 145, 145);
 }
 
+#banner1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: blue;
+  width: 100%;
+  height: 40px;
+  margin-top: 150px;
+  background-position: center;
+  /* background-size: cover; */
+}
+
+#cart table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+#cart table img {
+  width: 70px;
+}
+
+#cart table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+#cart table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+}
+#cart table td:nth-child(3) {
+  width: 150px;
+  text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(5) input {
+  width: 70px;
+  padding: 10px 5px 10px 5px;
+}
+
+#cart table thead {
+  border: 1px solid #e2e9e1;
+  border-left: none;
+  border-right: none;
+}
+
+#cart table thead td {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+}
+
+#cart table thead tr td {
+  padding-top: 15px;
+}
+
+#cart table tbody td {
+  font-size: 13px;
+}
+
+#cart-add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#cart-add #coupon {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+#coupon h3,
+#subtotal h3 {
+  padding-bottom: 15px;
+}
+
+#coupon input {
+  padding: 10px 20px;
+  outline: none;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid #e2e9e1;
+}
+
+#coupon button,
+#subtotal button {
+  background-color: #088178;
+  color: #fff;
+  padding: 12px 20px;
+}
+
+#subtotal {
+  width: 50%;
+  margin-bottom: 30px;
+  border: 1px solid #e2e9e1;
+  padding: 30px;
+}
+
+#subtotal table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#subtotal table td {
+  width: 50%;
+  border: 1px solid #e2e9e1;
+  padding: 10px;
+  font-size: 13px;
+}
